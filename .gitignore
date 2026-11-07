@@ -1,0 +1,31 @@
+# UNVERIFIED - scripts-only repository
+#
+# Strategy: ignore everything in the project root, then re-include
+# only what we want to track. Order matters: ignore first, un-ignore after.
+# Third-party assets (3D models, UI, audio, fonts) are intentionally excluded
+# because their licenses do not allow redistribution.
+
+# Ignore everything at the repository root
+/*
+
+# Re-include root files we want to track
+!/.gitignore
+!/README.md
+
+# Re-include the Assets folder itself (required before un-ignoring its children)
+!/Assets/
+
+# Inside Assets, ignore everything...
+/Assets/*
+
+# ...except the Scripts folder and its meta file
+!/Assets/Scripts/
+!/Assets/Scripts.meta
+
+# OS / editor junk (safety net, in case it appears inside Scripts)
+.DS_Store
+Thumbs.db
+*.tmp
+*.user
+*.suo
+.vs/
