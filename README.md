@@ -4,7 +4,7 @@ A first-person psychological horror game about room inspection and anomaly detec
 
 Built with Unity 6 (HDRP). Solo project.
 
-**Play for free (Windows):** [itch.io link]
+**Play for free (Windows):** [itch.io](https://nv3rmind.itch.io/unverified)
 
 *Inspection. Anomaly. Trust No One.*
 
